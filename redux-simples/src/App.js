@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Intervalo from './components/Intervalo'
 import Media from './components/Media'
@@ -8,26 +8,65 @@ import Sorteio from './components/Sorteio'
 
 
 function App() {
+
+  const [min,setMin] = useState(10)
+  const [max,setMax] = useState(999)
+
   return (
     <div className="App">
-      
+  
       <h1>Demo React-Redux (Versão Simples)</h1>
 
       <div className="linha"> 
-        <Intervalo></Intervalo>  
-      
-      
+        <Intervalo  min={min} max={max}
+          onMinChanged={setMin} onMaxChanged={setMax}></Intervalo>  
       </div>
+
+{/* 1o Sorteio */} 
       <div className="linha"> 
-      
-        <Media></Media>
+        <Media min={min} max={max}></Media>
+        <Soma  min={min} max={max}></Soma>
+        <Sorteio min={min} max={max}></Sorteio>
+      </div>
 
-        <Soma></Soma>
+{/* 2o Sorteio */} 
+      <div className="linha"> 
+        <Media min={min} max={max}></Media>
+        <Soma  min={min} max={max}></Soma>
+        <Sorteio min={min} max={max}></Sorteio>
+      </div>
 
-        <Sorteio></Sorteio>
-        
-    
-    </div>
+{/* 3o Sorteio */} 
+<div className="linha"> 
+        <Media min={min} max={max}></Media>
+        <Soma  min={min} max={max}></Soma>
+        <Sorteio min={min} max={max}></Sorteio>
+      </div>
+
+{/* 4o Sorteio */} 
+<div className="linha"> 
+        <Media min={min} max={max}></Media>
+        <Soma  min={min} max={max}></Soma>
+        <Sorteio min={min} max={max}></Sorteio>
+      </div>
+
+{/* 5o Sorteio */} 
+<div className="linha"> 
+        <Media min={min} max={max}></Media>
+        <Soma  min={min} max={max}></Soma>
+        <Sorteio min={min} max={max}></Sorteio>
+      </div>
+
+{/* 6o Sorteio */} 
+<div className="linha"> 
+        <Media min={min} max={max}></Media>
+        <Soma  min={min} max={max}></Soma>
+        <Sorteio min={min} max={max}></Sorteio>
+      </div>
+
+
+
+
     </div>
   );
 }
