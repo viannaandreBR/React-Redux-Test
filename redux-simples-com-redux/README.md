@@ -1,4 +1,4 @@
-# React-Redux-Test (without Redux)
+# React-Redux-Test (with Redux)
 
 
 <h1 align="center">
