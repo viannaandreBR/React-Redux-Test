@@ -3,8 +3,6 @@ import React from 'react'
 import Card from './Card'
 
 export default props => {
-  const min = props.min
-  const max = props.max
 
   return (
     <Card title="Soma dos Números" blue>
@@ -13,7 +11,7 @@ export default props => {
 
       <span>
         <span>Resultado: </span>
-        <strong>{min+max}</strong>
+        <strong>{22}</strong>
       </span>
 
 
