@@ -4,7 +4,7 @@
 <h1 align="center">
 <br>
 
-<img src="demo-sem-redux.gif" alt="TodoApp" >
+<img src="demo-COM-redux.gif" alt="TodoApp" >
 
 <br>
 <br>
@@ -33,19 +33,16 @@ This app features all the latest tools and practices in mobile development!
 
 ## Getting started - Backend
 
-/backend/npm run dev
+/npm run dev
 
-/backend/npm run production
+/npm run production
 
-## Getting started - MongoDB
-
-/frontend/mongod
 
 ## Getting started - Frontend
 
-/frontend/npm run dev
+/npm run dev
 
-/frontend/npm run production
+/npm run production
 
 
 ## License

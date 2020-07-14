@@ -9,7 +9,7 @@ import Sorteio from "./components/Sorteio";
 function App() {
   return (
     <div className="App">
-      <h1>Demo React-Redux (Versão Simples)</h1>
+      <h1>Demo React-Redux (Versão com Redux)</h1>
 
       <div className="linha">
         <Intervalo></Intervalo>
